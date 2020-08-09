@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Joseph Azumah Bayata">
+  <title>Get Time</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    button{
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 20px;
+      background: #f4f;
+      color: #fff;
+      border: none;
+      outline-style: none;
+    }
+
+    h1{
+      font-size: 32px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <button class="btn">Get Time</button>
+  <h1></h1>
+
+
+  <script>
+    let btn = document.querySelector(".btn");
+    btn.addEventListener("click", () => {
+      let time = document.querySelector("h1");
+      time.innerText = new Date();
+    })
+  </script>
+</body>
+</html>
